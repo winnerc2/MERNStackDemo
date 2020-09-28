@@ -1,0 +1,28 @@
+npm init
+npm i express express-graphql graphql
+using nodemon to watch app.js file: nodemon app.js
+created app.js
+app.js express app inited to listen on localhost:4000
+graphqlHTTP is added to app.js to handle http requests sent to graphql
+app.js has app.use added to create a node js endpoint
+    /graphql is added as the graphql endpoint for the backend
+
+graphqlHTTP requires the schema to be input so build your schema now
+new folder schema with schema.js
+    uses graphql types from graphql to define 3 things
+        1. schema types
+        2. schema relations
+        3. Graph entry points called ' Root Queries '
+    export schema.js to module.exports and export as type
+        GraphQLSchema
+    NOTE: in root queries the resolve function contains code to query
+        actual database.
+
+install mongoose (mongodB interface)
+installed mongoDB
+    add running the mongoDB service to the application stack
+    npm run mongo-start from server
+
+    SETUP mongoDB
+    SETUP mongoDB models
+
